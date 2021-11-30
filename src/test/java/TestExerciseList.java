@@ -7,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class TestExerciseList {
     private BodyPart bodyPart;
-    private ExerciseList exerciseList;
 
     //Test for user created exercises
     //* Before testing uncomment private instance of bodyPart and created instance of bodyPart in setup()
@@ -17,7 +16,7 @@ class TestExerciseList {
     @BeforeEach
     void setup() {
         bodyPart = new BodyPart("CHEST");
-        exerciseList = new ExerciseList();
+        ExerciseList exerciseList = new ExerciseList();
         ExerciseList.createExercise(bodyPart.getName(), "Dumbbell row");
         ExerciseList.createExercise(bodyPart.getName(), "Pull down");
         ExerciseList.createExercise(bodyPart.getName(), "Bench press");

@@ -4,7 +4,7 @@ import java.util.Set;
 
 public final class BodyPart implements Serializable {
     private final String name;
-    protected  Set<Exercise> exercises;
+    protected final  Set<Exercise> exercises;
     private static final long serialVersionUID = 1L;
 
     public BodyPart(String name) {
@@ -13,11 +13,11 @@ public final class BodyPart implements Serializable {
     }
 
     //BodyPart getters:
-    protected final String getName() {
+    public String getName() {
         return name;
     }
     //Return unmodifiable map to sub-class
-    protected final Set<Exercise> getExercises() {
+    public Set<Exercise> getExercises() {
         return this.exercises;
     }
 

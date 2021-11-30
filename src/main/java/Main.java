@@ -9,7 +9,7 @@ public class Main {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        //bodypart and exercise test
+//        bodypart and exercise test
 //        BodyPart bodyPart = new BodyPart("CHEST"); // -> SHOULD CAUSE ERROR, BECAUSE IT'S A PRIVATE ACCESS CLASS
 //        Exercise exercise = new Exercise(new BodyPart("Not going to work"), "Not getting created"); // -> Should cause error
 

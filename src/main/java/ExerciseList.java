@@ -56,7 +56,7 @@ public class ExerciseList implements Serializable {
     }
 
     //App created exercises -> Are undeletable by user
-    private final static boolean createExercise(BodyPart bodyPart, String exerciseName) {
+    private static boolean createExercise(BodyPart bodyPart, String exerciseName) {
         Set<Exercise> list = exerciseList.getOrDefault(bodyPart, null);
         if (list == null) {
             bodyPart.exercises.add(new Exercise(bodyPart, exerciseName.toUpperCase()));
@@ -75,7 +75,7 @@ public class ExerciseList implements Serializable {
     }
 
     //User made exercises -> Are deletable by user
-    public final static boolean createExercise(String bodyPart, String exerciseName) {
+    public static boolean createExercise(String bodyPart, String exerciseName) {
         for (BodyPart body : exerciseList.keySet()) {
             if (body.getName().equals(bodyPart.toUpperCase())) {
                 Exercise newExercise = new Exercise(body, exerciseName.toUpperCase());
@@ -102,7 +102,7 @@ public class ExerciseList implements Serializable {
     }
 
     //Delete user made exercise from dataBase
-    public final static boolean deleteExercise(String bodyPart, String exerciseName) {
+    public static boolean deleteExercise(String bodyPart, String exerciseName) {
         for (BodyPart temp : exerciseList.keySet()) {
             if (temp.getName().equals(bodyPart.toUpperCase())) {
                 for (Exercise exercise : temp.exercises) {
@@ -119,7 +119,7 @@ public class ExerciseList implements Serializable {
     }
 
     // Print exerciseList
-    public final static void displayBasicMuscleGroupExercises() {
+    public static void displayBasicMuscleGroupExercises() {
         for (Map.Entry<BodyPart, Set<Exercise>> entry : exerciseList.entrySet()) {
             System.out.println(entry.getKey().getName() + ": ");
             int i = 1;

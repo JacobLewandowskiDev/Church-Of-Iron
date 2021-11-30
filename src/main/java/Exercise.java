@@ -1,10 +1,10 @@
 import java.io.Serializable;
 
 public final class Exercise implements Serializable {
-    protected String name;
-    protected int sets;
-    protected int reps;
-    protected double weight;
+    private String name;
+    private int sets;
+    private int reps;
+    private double weight;
     protected boolean userCreated;
     private final BodyPart bodyPart;
     private static final long serialVersionUID = 1L;
@@ -20,19 +20,19 @@ public final class Exercise implements Serializable {
     }
 
     //Getters for Exercise
-    protected String getName() {
+    public String getName() {
         return name;
     }
 
-    protected int getSets() {
+    public int getSets() {
         return sets;
     }
 
-    protected int getReps() {
+    public int getReps() {
         return reps;
     }
 
-    protected double getWeight() {
+    public double getWeight() {
         return weight;
     }
 
