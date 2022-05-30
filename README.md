@@ -1,10 +1,7 @@
 # Church-Of-Iron
 
 ## Description
-This project will become a fully functional gym web app that allows users to log in and create their own workout routine to 
-track their progress by adding exercises from the default list or adding their own exercises to it. Each list will then be saved 
-and stored for each individual user for future use. The user will also be able to copy their previous workouts to avoid typing it 
-out each time.
+This project as of now is a work in progress to become a fully functional gym web app that allows users to log into their account and create their own workout routines to track their progress. They can save exercises from the default list to their routine or add their own exercises to it. Each list will then be saved and stored for each individual user for future use. The user will also be able to copy their previous workouts with the previous reps and sets to avoid typing it out each time.
 
 ## User Features
 - Browse through the available exercise list that is divided into groups for each body part.
@@ -14,8 +11,6 @@ out each time.
 
 ## Tech stack used for the project
 - Back-end: Java.
-- Data storage: MySQL.
-- Front-end: HTML, CSS, JavaScript.
 - Unit testing: Junit 5.
 - Project build and management automation: Maven.
 
